@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Lato"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="bg-gray-900 py-6">
+      <div class="flex justify-between items-center">
+        <div class="text-red-500">
+          <a><i class="fa fa-bars"></i></a>
+          <a href="#">HOME</a>
+          <a href="#band">BAND</a>
+          <a href="#tour">CARDS</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <div>
+          
+          <div class="space-x-10">
+            <a href="#" class="text-lime-500">Merchandise</a>
+            <a href="#" class="text-blue-500">Extras</a>
+            <a href="#" class="text-lime-500">Media</a>
+          </div>
+        </div>
+        <a class="text-red-500"><i class="fa fa-search"></i></a>
+      </div>
+    </div>
+
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div class="bg-sky-200">
+      <div class="text-center py-8">
+        <div
+          id="navDemo"
+          class="underline font-bold py-8 text-cyan-800 text-lg space-x-5"
+        >
+          <a href="#band">BAND</a>
+          <a href="#tour">TOUR</a>
+          <a href="#contact">CONTACT</a>
+          <a href="#">MERCH</a>
+        </div>
+
+
+
+        <!-- Page content -->
+        <div class="bg-gray-100 p-8 rounded-xl shadow-lg max-w-md mx-auto">
+  <!-- Sección de producto principal con imagen centrada -->
+  <div class="text-center mb-8">
+    <img src="arceus.jpg" class="w-48 mx-auto rounded-lg border-2 border-yellow-400 shadow-md" />
+    <h3 class="text-2xl font-semibold text-yellow-600 mt-4">Leyendas Arceus</h3>
+    <p class="text-gray-700 font-medium text-lg">49.99$</p>
+  </div>
+
+  <!-- Sección de productos adicionales en una fila -->
+  <div class="flex justify-center gap-6">
+    <!-- Tarjeta Pokémon Rojo Fuego -->
+    <div class="text-center">
+      <img src="fuego.png" class="w-36 mx-auto rounded-lg border border-red-300 shadow-sm" />
+      <h3 class="text-lg font-semibold text-red-600 mt-3">Pokémon Rojo Fuego</h3>
+      <p class="text-gray-600 font-medium">99.99$</p>
+    </div>
+
+    <!-- Tarjeta Pokémon Zafiro -->
+    <div class="text-center">
+      <img src="zafiro.jpg" class="w-36 mx-auto rounded-lg border border-blue-300 shadow-sm" />
+      <h3 class="text-lg font-semibold text-blue-600 mt-3">Pokémon Zafiro</h3>
+      <p class="text-gray-600 font-medium">39.99$</p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      </div>
+      <br />
+      <!-- The Band Section -->
+      <div id="band" class="p-8 bg-gray-100 rounded-lg shadow-md">
+        <h2 class="text-xl text-center mb-4 font-semibold">THE BAND</h2>
+        <p class="text-center italic mb-6">We love Pokemon</p>
+
+        <p class="text-justify mb-8 text-gray-700">
+          I love Pokémon because it’s a world full of adventure, creativity, and
+          endless possibilities. The idea of capturing, training, and battling
+          with Pokémon is exciting and allows me to immerse myself in a universe
+          where every creature is unique. I enjoy the variety of Pokémon and
+          their different types, each with its own abilities and strengths. It
+          makes every battle feel different and strategic. Additionally, Pokémon
+          has a strong sense of nostalgia for me, reminding me of childhood
+          moments spent playing the games, watching the TV series, and trading
+          cards with friends.
+        </p>
+
+        <div class="grid grid-cols-3 gap-6">
+          <div class="text-center border rounded-lg p-4 bg-white shadow">
+            <p class="mb-2 font-semibold">Charizard</p>
+            <img
+              src="c.jpg"
+              alt="Band member"
+              class="w-24 h-24 mx-auto rounded-full border-4 border-red-500"
+            />
+          </div>
+          <div class="text-center border rounded-lg p-4 bg-white shadow">
+            <p class="mb-2 font-semibold">Venusaur</p>
+            <img
+              src="v.jpg"
+              alt="Band member"
+              class="w-24 h-24 mx-auto rounded-full border-4 border-green-500"
+            />
+          </div>
+          <div class="text-center border rounded-lg p-4 bg-white shadow">
+            <p class="mb-2 font-semibold">Blastoise</p>
+            <img
+              src="b.jpg"
+              alt="Band member"
+              class="w-24 h-24 mx-auto rounded-full border-4 border-blue-500"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- The Tour Section -->
+      <div id="tour" class="p-6">
+        <h2 class="text-xl text-center mb-2">CARDS</h2>
+        <p class="text-center italic mb-4">Buy your cards</p>
+
+        <div class="grid gap-4">
+          <!-- Tour location item -->
+          <div class="overflow-hidden text-center">
+            <img
+              src="dialga.png"
+              alt="Dialga"
+              class="w-64 mx-auto mt-2 rounded"
+            />
+            <div class="p-4">
+              <p class="font-semibold">Dialga</p>
+              <p class="text-sm">350$</p>
+              <p class="text-xs text-gray-600 mb-3">Un pokemon muy chulo.</p>
+              <button class="w-32 py-2 bg-blue-600 text-white rounded">
+                Buy card
+              </button>
+            </div>
+          </div>
+
+          <div class=" overflow-hidden text-center">
+            <img
+              src="latios.jpg"
+              alt="latios"
+              class="w-64 mx-auto mt-2 rounded"
+            />
+            <div class="p-4">
+              <p class="font-semibold">Latios</p>
+              <p class="text-sm">4000$</p>
+              <p class="text-xs text-gray-600 mb-3">
+                Un pokémon aún más chulo.
+              </p>
+              <button class="w-32 py-2 bg-blue-600 text-white rounded">
+                Buy card
+              </button>
+            </div>
+          </div>
+
+          <div class=" overflow-hidden text-center">
+            <img src="mew.jpg" alt="Mew" class="w-64 mx-auto mt-2 rounded" />
+            <div class="p-4">
+              <p class="font-semibold">Mew</p>
+              <p class="text-sm">20000$</p>
+              <p class="text-xs text-gray-600 mb-3">
+                Un pokémon más chulo aún que los otros dos anteriores.
+              </p>
+              <button class="w-32 py-2 bg-blue-600 text-white rounded">
+                Buy card
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ticket Modal -->
+      <div
+        id="ticketModal"
+        class="p-4 bg-gray-100 border rounded w-80 mx-auto mt-10 py-8"
+      >
+        <header class="flex justify-between items-center mb-4">
+          <h2 class="text-lg font-semibold">Buy cards</h2>
+        </header>
+
+        <div class="space-y-3">
+          <p><label>Cards, per person</label></p>
+          <input
+            type="number"
+            placeholder="How many?"
+            class="w-full p-2 border rounded"
+          />
+
+          <p><label>Send To</label></p>
+          <input
+            type="email"
+            placeholder="Enter email"
+            class="w-full p-2 border rounded"
+          />
+
+          <div class="flex justify-between mt-4">
+            <button class="bg-blue-500 text-white px-4 py-2 rounded">
+              PAY
+            </button>
+            <button class="bg-gray-300 px-4 py-2 rounded">Close</button>
+          </div>
+
+          <p class="text-center text-sm mt-4">
+            Need <a href="#" class="underline text-blue-500">help?</a>
+          </p>
+        </div>
+      </div>
+
+      <!-- The Contact Section -->
+      <div id="contact" class="py-12 bg-gray-100">
+        <h2 class="text-3xl font-semibold text-center mb-4">
+          CONTACTA CON NOSOTROS
+        </h2>
+        <p class="text-center italic mb-8">Dóname dinero</p>
+
+        <div class="max-w-md mx-auto space-y-6 text-center">
+          <div class="space-y-2">
+            <p>
+              <i class="fa fa-map-marker text-blue-600"></i> Orihuela, Japón
+            </p>
+            <p><i class="fa fa-phone text-green-600"></i> Phone: +00 9023804</p>
+            <p>
+              <i class="fa fa-envelope text-red-600"></i> Email:
+              pokemon@mail.com
+            </p>
+          </div>
+
+          <form action="/action_page.php" target="_blank" class="space-y-4">
+            <input
+              type="text"
+              placeholder="Name"
+              required
+              name="Name"
+              class="w-full p-3 border border-gray-300 rounded"
+            />
+            <input
+              type="email"
+              placeholder="Email"
+              required
+              name="Email"
+              class="w-full p-3 border border-gray-300 rounded"
+            />
+            <textarea
+              placeholder="Message"
+              required
+              name="Message"
+              class="w-full p-3 border border-gray-300 rounded h-32"
+            ></textarea>
+
+            <button
+              type="submit"
+              class="w-full p-3 bg-blue-600 text-white rounded hover:bg-blue-700"
+            >
+              SEND
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- End Page Content -->
+    </div>
+    <!-- Footer -->
+    <footer class="py-8 bg-gray-900">
+      <div class="text-white text-center">
+        <i class="fa fa-facebook-official"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-snapchat"></i>
+        <i class="fa fa-pinterest-p"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-linkedin"></i>
+        <p>
+          Powered by
+          <a href="https://www.pokemon.com/es" target="_blank">pokemon.com</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
